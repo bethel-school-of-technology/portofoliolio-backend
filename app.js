@@ -10,7 +10,7 @@ var usersRouter = require('./routes/users');
 var itemsRouter = require('./routes/items');
 var app = express();
 
-app.use(cors());
+app.use(cors()); // This was from Darrin
 app.use(bodyParser.json());
 app.use(logger('dev'));
 app.use(express.json());
